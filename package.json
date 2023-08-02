@@ -4,7 +4,9 @@
   "description": "The SISP Payment Middleware is a Node.js project that aims to simplify the process of integrating the SISP Payments API into your applications",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "node ./scripts/pre-test.js && yarn",
+    "test": "jest",
+    "posttest": "node ./scripts/post-test.js && yarn"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   },
   "homepage": "https://github.com/Chuva-Foundation/sisp_payment_middleware#readme",
   "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
     "@types/jest": "^29.5.3",
     "jest": "^29.6.2"
   }
