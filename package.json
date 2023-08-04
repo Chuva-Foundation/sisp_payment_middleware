@@ -10,6 +10,11 @@
     "test": "jest",
     "posttest": "node ./scripts/post-test.js && yarn"
   },
+  "dependencies": {
+    "@chuva.io/sisp": "^2.2.0",
+    "handlebars": "^4.7.8",
+    "joi": "^17.9.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Chuva-Foundation/sisp_payment_middleware.git"
@@ -29,9 +34,5 @@
     "@faker-js/faker": "^8.0.2",
     "@types/jest": "^29.5.3",
     "jest": "^29.6.2"
-  },
-  "dependencies": {
-    "@chuva.io/sisp": "^2.2.0",
-    "joi": "^17.9.2"
   }
 }
